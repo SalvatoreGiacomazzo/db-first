@@ -1,0 +1,15 @@
+Used Cars Database
+
+
+id                                  MEDIUMINT              PRIMARY KEY                      AUTO_INCREMENT
+year_of_production                  YEAR                   NULL
+date_of_arrival                     DATETIME               NOTNULL 
+brand                               VARCHAR                NOTNULL
+model                               VARCHAR                NOTNULL
+fuel                                VARCHAR                NULL
+gear                                VARCHAR                NULL
+has_changed_parts                   BOOLEAN                NOTNULL                          DEFAULT(FALSE)
+vehicle_identification_number       CHAR(17)               NOTNULL                          UNIQUE
+description                         TEXT                   NOTNULL
+plate                               CHAR(6)                NOTNULL                          UNIQUE
+availability                        BOOLEAN                NOTNULL                          DEFAULT(FALSE)
